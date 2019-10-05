@@ -8,9 +8,9 @@ ovpnbook is a bash script that is used as a service and allows you to automatica
 Installation
 =
     git clone https://github.com/Lulz3xploit/ovpnbook
-    cd ovonbook
+    cd ovpnbook
     chmod u+x install.sh
-    ./install.sh install
+    sudo./install.sh install
     
 Usage
 =
