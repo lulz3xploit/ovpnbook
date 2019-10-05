@@ -87,11 +87,6 @@ _start()
 password_img=$(curl -s https://www.vpnbook.com/freevpn | grep -m1 'Password' | cut -d'"' -f2)
 password=$(curl -s -X POST -H 'apikey: 5a64d478-9c89-43d8-88e3-c65de9999580' -F "url=https://www.vpnbook.com/$password_img" -F language=eng -F isOverlayRequired=true -F FileType=.Auto -F IsCreateSearchablePDF=false -F isSearchablePdfHideTextLayer=true -F scale=true -F detectOrientation=false -F isTable=false https://api.ocr.space/parse/image | grep -Eo '"LineText".*,' | cut -d'"' -f4 | sed "s/'//g")
 
-#timestamp=$(date +%s)
-#auth_file="/tmp/ovpn_auth.tmp"
-#log_file="/tmp/ovpn_log.tmp"
-#pid_file="/tmp/ovpn_pid.tmp"
-
 echo 'vpnbook' > $auth_file
 echo "$password" >> $auth_file
 
