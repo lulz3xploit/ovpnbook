@@ -14,15 +14,15 @@ Installation
 Usage
 =
 - start vpn
-    sudo ovpnbook start
+        sudo ovpnbook start
 - restart vpn
-    sudo ovpnbook restart
+        sudo ovpnbook restart
 - stop vpn
-    sudo ovpnbook stop
+        sudo ovpnbook stop
 - check connection (get ip and other...)
-    sudo ovpnbook check
+        sudo ovpnbook check
 
-Config for set profile openvon
+Config for set profile openvpn
 =
 - Edit config file.
     sudo nano /etc/ovpnbook.conf
